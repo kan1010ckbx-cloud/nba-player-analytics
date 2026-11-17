@@ -46,8 +46,6 @@ class PlayerIndex:
                 "eff": float(row["eff"])
             }
 
-            # TODO: 呼叫你之前寫好的 add()
-            # 將 player、season、stats 加入 index
             index.add(player, season, stats)
 
         return index

@@ -42,27 +42,6 @@ def merge(L, A, B, metric, descending):
 def rank_players(df, season: int,
                  metric: str = "pts",
                  descending: bool = True) -> list:
-
-    valid_metrics = {"pts", "reb", "ast", "eff"}
-
-    if metric not in valid_metrics:
-        raise ValueError(f"Invalid metric: {metric}")
-
-    # boolean mask to select the season
-    season_df = df[df["season"] == season]
-
-    # DataFrame → List of Dictionaries
-    records = season_df.to_dict(orient="records")
-
-    # sort it
-    merge_sort(records, metric, descending)
-
-    return records
-
-
-def rank_players(df, season: int,
-                 metric: str = "pts",
-                 descending: bool = True) -> list:
     valid_metrics = {"pts", "reb", "ast", "eff"}
 
     if metric not in valid_metrics:
