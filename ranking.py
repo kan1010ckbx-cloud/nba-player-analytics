@@ -45,7 +45,7 @@ def rank_players(df, season: int,
     valid_metrics = {"pts", "reb", "ast", "eff"}
 
     if metric not in valid_metrics:
-        return ValueError("Invalid metric!!")
+        raise ValueError("Invalid metric!!")
 
     season_df = df[df["season"] == season]
 
