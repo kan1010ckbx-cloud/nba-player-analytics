@@ -135,3 +135,15 @@ data/                  # Player-season data (subject to redistribution rights)
 **Ruei Shin Gan**  
 University of Connecticut — Undergraduate student (ACES; intended Data Science and Engineering)  
 [GitHub](https://github.com/kan1010ckbx-cloud) · [LinkedIn](https://www.linkedin.com/in/ruei-shin-gan-45a6a1403)
+
+## Data Source and Attribution
+
+This project uses NBA player-season statistics from [Box Score Lab](https://boxscorelab.com/downloads/), covering the 2022–23 through 2026–27 NBA seasons.
+
+Box Score Lab derives its statistics from publicly available NBA Stats data. The source CSV datasets are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**Data processing:** The original player-season CSV files were combined and transformed into a simplified dataset for this project. Selected statistics were converted to per-game averages, and a custom efficiency metric was calculated.
+
+**Source attribution:** Box Score Lab, boxscorelab.com, data through November 16, 2026 (source build).
+
+**Note:** The 2026–27 NBA season is ongoing. The included data represents a historical snapshot rather than final season statistics. This project is not affiliated with Box Score Lab or the NBA.
